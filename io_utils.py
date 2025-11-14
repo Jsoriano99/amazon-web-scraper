@@ -21,7 +21,7 @@ def read_urls_from_file(path: str) -> List[str]:
     # 1) Intentar UTF-16 LE primero (como guarda tu VSCode)
     try:
         text = raw.decode("utf-16-le")
-        # print("[DEBUG] Archivo leído como UTF-16 LE")
+        print("[DEBUG] Archivo leído como UTF-16 LE")
     except UnicodeDecodeError:
         pass
 
